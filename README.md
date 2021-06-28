@@ -1,24 +1,15 @@
 ## DoubleClick
-[Configurable doubleclick event for web]
+Configurable doubleclick event for web that creates a <div> element around your child component with a doubleclick trigger
 
 ## Features
-[feature highlights]
+- Configurable action to be fired on doubleclick
+- Add any child widget to serves as a trigger
+- Optional boolean to switch to pointer cursor on hover
 
 ## Usage
-[step by step instructions]
-
-## Demo project
-[link to sandbox]
+- Drag the widget on a page
+- Select the action to execute on doubleclick
+- Add a child widget that serves as the trigger
 
 ## Issues, suggestions and feature requests
-[link to GitHub issues]
-
-## Development and contribution
-
-1. Install NPM package dependencies by using: `npm install`. If you use NPM v7.x.x, which can be checked by executing `npm -v`, execute: `npm install --legacy-peer-deps`.
-1. Run `npm start` to watch for code changes. On every change:
-    - the widget will be bundled;
-    - the bundle will be included in a `dist` folder in the root directory of the project;
-    - the bundle will be included in the `deployment` and `widgets` folder of the Mendix test project.
-
-[specify contribution]
+[Github issues page](https://github.com/NathanRuthITVisors/mx-double-click/issues)
