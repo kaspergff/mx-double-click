@@ -17,9 +17,9 @@ export default class DoubleClick extends Component {
     }
 
     render() {
-        var classes = "widget-doubleclick";
+        var classes = "";
         if (this.props.showPointer) {
-            classes += " widget-doubleclick-clickable";
+            classes += "widget-doubleclick-clickable";
         }
         return (
             <div
