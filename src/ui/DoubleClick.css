@@ -1,0 +1,7 @@
+.widget-doubleclick-clickable {
+    cursor: pointer;
+}
+
+.widget-doubleclick {
+    display: inline-block;
+}
