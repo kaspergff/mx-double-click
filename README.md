@@ -1,5 +1,5 @@
 ## DoubleClick
-Configurable doubleclick event for web that creates a <div> element around your child component with a doubleclick trigger
+Configurable doubleclick event for web that creates a ```<div>``` element around your child component with a doubleclick trigger
 
 ## Features
 - Configurable action to be fired on doubleclick
