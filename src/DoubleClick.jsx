@@ -1,35 +1,24 @@
-import { Component, createElement } from "react";
-
 import "./ui/DoubleClick.css";
 
-export default class DoubleClick extends Component {
+import React from "react";
 
-    constructor(props) {
-        super(props);
+function DoubleClick(props) {
+  const { showPointer, dblClickAction, children } = props;
 
-        this.onDoubleClick = this.onDoubleClick.bind(this);
+  const onDoubleClick = () => {
+    if (dblClickAction && dblClickAction.canExecute) {
+      dblClickAction.execute();
     }
+  };
 
-    onDoubleClick() {
-        if (this.props.dblClickAction && this.props.dblClickAction.canExecute) {
-            this.props.dblClickAction.execute();
-        }
-    }
+  const classes = showPointer ? "widget-doubleclick-clickable" : "";
 
-    render() {
-        var classes = "";
-        if (this.props.showPointer) {
-            classes += "widget-doubleclick-clickable";
-        }
-        return (
-            <div
-                className={classes}
-                onDoubleClick={this.onDoubleClick}
-            >
-                {this.props.children}
-            </div>
-        );
-    }
-
-
+  return (
+    <div className={classes} onDoubleClick={onDoubleClick}>
+      {children}
+    </div>
+  );
 }
+
+export default DoubleClick;
+
